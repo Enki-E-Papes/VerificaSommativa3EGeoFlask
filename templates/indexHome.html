@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/risultati2" method="get">
+        <label for="filmInput">Scegli un genere</label>
+        <select name="filmInput">
+        {% for genere in moviesGenres %}
+        <option value={{genere}}>{{genere}}</option>
+        {% endfor %}
+        </select>      
+        <p><input type = "submit" value = "CLICCA" /></p>
+    </form>
+</body>
+</html>
